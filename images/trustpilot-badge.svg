@@ -1,0 +1,27 @@
+<svg width="180" height="60" viewBox="0 0 180 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="180" height="60" rx="4" fill="white"/>
+  <!-- Trustpilot Logo -->
+  <g transform="translate(25, 12)">
+    <!-- Star icon -->
+    <polygon points="12,0 15,9 24,9 17,14 20,24 12,18 4,24 7,14 0,9 9,9" fill="#00b67a" transform="scale(0.7)"/>
+    <!-- Text -->
+    <text x="22" y="14" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1a1a1a">Trustpilot</text>
+    <!-- 5 Stars -->
+    <g transform="translate(0, 24)">
+      <rect x="0" y="0" width="22" height="20" fill="#00b67a"/>
+      <polygon points="11,3 13,8 18,8 14,11 15.5,16 11,13 6.5,16 8,11 4,8 9,8" fill="white"/>
+      
+      <rect x="24" y="0" width="22" height="20" fill="#00b67a"/>
+      <polygon points="35,3 37,8 42,8 38,11 39.5,16 35,13 30.5,16 32,11 28,8 33,8" fill="white"/>
+      
+      <rect x="48" y="0" width="22" height="20" fill="#00b67a"/>
+      <polygon points="59,3 61,8 66,8 62,11 63.5,16 59,13 54.5,16 56,11 52,8 57,8" fill="white"/>
+      
+      <rect x="72" y="0" width="22" height="20" fill="#00b67a"/>
+      <polygon points="83,3 85,8 90,8 86,11 87.5,16 83,13 78.5,16 80,11 76,8 81,8" fill="white"/>
+      
+      <rect x="96" y="0" width="22" height="20" fill="#00b67a"/>
+      <polygon points="107,3 109,8 114,8 110,11 111.5,16 107,13 102.5,16 104,11 100,8 105,8" fill="white"/>
+    </g>
+  </g>
+</svg>

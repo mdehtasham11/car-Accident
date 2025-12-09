@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Accident Counsel - Maximum Accident Compensation</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-content">
+        <div class="logo">
+          <div class="logo-icon">
+            <img
+              src="images/logo.png"
+              alt="Car Accident Counsel"
+              class="logo-image"
+            />
+          </div>
+        </div>
+        <p class="header-tagline">
+          You May be Entitled to Maximum Accident Compensation
+        </p>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-background">
+        <img
+          src="images/hero-bg.jpg"
+          alt="Car accident background"
+          class="hero-bg-image"
+        />
+      </div>
+
+      <div class="hero-content">
+        <h1 class="hero-title">
+          Receive
+          <span class="underline">Maximum Accident Injury Payout</span> with the
+          Help of<br />Trusted Personal Injury Lawyers
+          <!-- <span class="highlight">Trusted Personal Injury Lawyers</span> -->
+        </h1>
+
+        <p class="hero-subtitle">
+          Take this quick assessment to get a
+          <span class="cta-text">FREE CASE CONSULTATION</span> and
+          <span class="gold-text">know how much is owed to you</span>
+        </p>
+
+        <!-- Timer Banner -->
+        <div class="timer-banner">
+          <p class="timer-text">
+            Skip the line for instant connection with a specialist by completing
+            the questions before the time limit.
+          </p>
+          <div class="timer-display">
+            <span id="timer">01:34</span>
+          </div>
+        </div>
+
+        <!-- Question Card -->
+        <div class="question-card">
+          <p class="question-progress">
+            Question <span id="current-question">1</span> out of 9
+          </p>
+
+          <div class="question-block" data-question="1">
+            <h2 class="question-title">
+              1. How bad was your car accident?<span class="required">*</span>
+            </h2>
+            <div class="options">
+              <button class="option-btn">I WAS INJURED</button>
+              <button class="option-btn">I WAS NOT INJURED AT ALL</button>
+            </div>
+          </div>
+
+          <div class="question-block hidden" data-question="2">
+            <h2 class="question-title">
+              2. Are you currently represented by a lawyer for the accident?
+            </h2>
+            <div class="options">
+              <button class="option-btn">No</button>
+              <button class="option-btn">
+                Yes, I ALREADY HAVE A LAWYER/RECIVED COMPONSATION
+              </button>
+            </div>
+          </div>
+
+          <div class="question-block hidden" data-question="3">
+            <h2 class="question-title">
+              3. Are you at fault for the accident? Be honest
+            </h2>
+            <div class="options">
+              <button class="option-btn">
+                No, I am not at fault. The other driver owes damages.
+              </button>
+              <button class="option-btn">Yes, it was my fault.</button>
+              <button class="option-btn">
+                There was no one else there, I hit a tree/fallen object/weather
+                problem.
+              </button>
+            </div>
+          </div>
+
+          <div class="question-block hidden" data-question="4">
+            <h2 class="question-title">
+              4. Tell us about your accident <span class="required">*</span>
+            </h2>
+            <div class="textarea-wrapper">
+              <textarea
+                class="question-textarea"
+                id="accident-details"
+                placeholder="please provide details about your accident"
+                minlength="40"
+                maxlength="500"
+              ></textarea>
+              <span class="textarea-error"
+                >Please enter at least 40 characters</span
+              >
+              <div class="textarea-footer">
+                <span class="textarea-min">Min 40 characters</span>
+                <span class="textarea-counter"
+                  ><span id="accident-char-count">0</span>/500 characters</span
+                >
+              </div>
+            </div>
+            <button class="continue-btn" disabled>CONTINUE</button>
+          </div>
+
+          <div class="question-block hidden" data-question="5">
+            <h2 class="question-title">5. When did the accident happen?</h2>
+            <div class="options">
+              <button class="option-btn">LESS THAN 3 MONTHS</button>
+              <button class="option-btn">3 TO 6 MONTHS AGO</button>
+              <button class="option-btn">6 TO 12 MONTHS AGO</button>
+              <button class="option-btn">1 TO 2 YEARS AGO</button>
+              <button class="option-btn">MORE THAN 2 YEARS</button>
+            </div>
+          </div>
+
+          <div class="question-block hidden" data-question="6">
+            <p class="contact-intro">
+              One of our friendly representatives will contact you shortly.
+              Please tell us how we can reach you about your free consultation.
+            </p>
+            <h2 class="question-title">
+              6. First Name <span class="required">*</span>
+            </h2>
+            <div class="input-wrapper">
+              <input
+                type="text"
+                class="question-input"
+                id="first-name"
+                placeholder="Enter your first name"
+                maxlength="63"
+              />
+              <span class="char-counter"
+                ><span id="first-name-count">0</span>/63 characters</span
+              >
+            </div>
+            <button class="continue-btn">CONTINUE</button>
+          </div>
+
+          <div class="question-block hidden" data-question="7">
+            <p class="contact-intro">
+              One of our friendly representatives will contact you shortly.
+              Please tell us how we can reach you about your free consultation.
+            </p>
+            <h2 class="question-title">
+              7. Last Name<span class="required">*</span>
+            </h2>
+            <div class="input-wrapper">
+              <input
+                type="text"
+                class="question-input"
+                id="last-name"
+                placeholder="Enter your last name"
+                maxlength="63"
+              />
+              <span class="char-counter"
+                ><span id="last-name-count">0</span>/63 characters</span
+              >
+            </div>
+            <button class="continue-btn">CONTINUE</button>
+          </div>
+
+          <div class="question-block hidden" data-question="8">
+            <p class="contact-intro">
+              One of our friendly representatives will contact you shortly.
+              Please tell us how we can reach you about your free consultation.
+            </p>
+            <h2 class="question-title">
+              8. Your email <span class="required">*</span>
+            </h2>
+            <div class="input-wrapper">
+              <input
+                type="email"
+                class="question-input"
+                id="email"
+                placeholder="Please enter a valid email address"
+              />
+              <span class="input-error" id="email-error"
+                >Please enter a valid email address</span
+              >
+            </div>
+            <button class="continue-btn" disabled>CONTINUE</button>
+          </div>
+
+          <div class="question-block hidden" data-question="9">
+            <h2 class="question-title">
+              9. What is your cell number? For us to call you about compensation
+              please be ready to pick up <span class="required">*</span>
+            </h2>
+            <div class="input-wrapper">
+              <input
+                type="tel"
+                class="question-input"
+                id="phone"
+                placeholder="Enter your phone number"
+              />
+              <span class="input-error" id="phone-error"
+                >Please enter a valid US phone number</span
+              >
+            </div>
+            <button class="submit-btn" disabled>SUBMIT</button>
+            <p class="submit-disclaimer">
+              By clicking "Submit and Get Free Consultation" you expressly
+              consent to receive calls and text messages for marketing purposes
+              from Car Accident Counsel our affiliates, and marketing
+              <a href="#">partners</a> using automated technology including
+              artificial pre-recorded voice. You agree that we may contact you
+              at any time, including before 8am or after 9pm local time. Consent
+              is not a condition of purchase. You agree to the use of electronic
+              signatures, our <a href="#">Privacy Policy</a>, and
+              <a href="#">Terms of Use</a>.*
+            </p>
+          </div>
+        </div>
+
+        <!-- Trust Text -->
+        <p class="trust-text">FREE No Obligation Consultation Pay Nothing!</p>
+
+        <!-- Ratings Section -->
+        <h3 class="ratings-title">
+          Our Expert Lawyers Have Been Rated 5-stars
+        </h3>
+
+        <div class="ratings-badges">
+          <div class="badge yelp-badge">
+            <img
+              src="images/yelp2.png"
+              alt="Yelp 5 stars"
+              class="badge-image"
+            />
+          </div>
+          <div class="badge google-badge">
+            <img
+              src="images/google2.png"
+              alt="Google 5.0 rating"
+              class="badge-image"
+            />
+          </div>
+          <div class="badge trustpilot-badge">
+            <img
+              src="images/trustpilot2.png"
+              alt="Trustpilot Excellent"
+              class="badge-image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Disclaimer Section -->
+    <section class="disclaimer-section">
+      <div class="disclaimer-content">
+        <p class="disclaimer-text">
+          By clicking on the "Next" button above, you consent, acknowledge, and
+          agree to the following: Our <a href="#">Terms of Service</a> and
+          Privacy Policy. That you are providing express "written" consent for
+          caraccidentcounsel.com or its
+          <a href="#">network of lawyers and advocates to</a> call you
+          (autodialing, text and pre-recorded messaging for convenience) via
+          telephone, mobile device(including SMS and MMS - charges may apply
+          depending on your carrier, not by us, messaging frequency varies; text
+          HELP for help; text STOP to cancel), even if your telephone number is
+          currently listed on any internal, corporate, state or federal Do- Not
+          - Call list.We take your privacy seriously and you may receive
+          electronic communications, including periodic emails with important
+          news, financial tips, tools and more.You can always unsubscribe at any
+          time.All website interactions and phone calls are recorded for
+          compliance and quality assurance purposes.Consent is not required as a
+          condition to utilize caraccidentcounsel.com services and you are under
+          no obligation to purchase anything.
+        </p>
+
+        <p class="disclaimer-text">
+          This site is not a part of the Facebook website or Facebook Inc.
+          Additionally, This site is NOT endorsed by Facebook in any way.
+          FACEBOOK is a trademark of FACEBOOK, Inc.
+        </p>
+
+        <p class="disclaimer-text">
+          This site is not a part of the YouTube website or Google, LLC.
+          Additionally, This site is NOT endorsed by Google in any way.YouTube
+          is a trademark of Google, LLC.
+        </p>
+
+        <p class="disclaimer-text">
+          PAID ATTORNEY ADVERTISEMENT: This Website is a group advertisement. It
+          is not a lawyer referral service or prepaid legal services plan.This
+          website is not a law firm.The sole basis for the inclusion of the
+          participating lawyers or law firms is the payment of a fee for
+          exclusive geographical advertising rights.A complete list of our joint
+          advertising attorneys can be found here: <a href="#">Sponsors</a> You
+          can request an attorney by name. Our company does not endorse or
+          recommend any lawyer or law firm who participates in the network.It
+          does not make any representation and has not made any judgment as to
+          the qualifications, expertise or credentials of any participating
+          lawyer.The information contained herein is not legal advice.Any
+          information you submit to this website may not be protected by
+          attorney-client privilege.All photos are of models and do not depict
+          clients.All case evaluations are performed by participating
+          attorneys.This website is for informational purposes only.By filling
+          out the free consultation form, you are NOT forming an attorney-
+          client relationship.You can only retain a lawyer by entering into a
+          written retainer agreement with an attorney.Our services may not be
+          available in all states.
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Disclaimer</a>
+          <a href="#">California Privacy Notice</a>
+        </div>
+        <p class="copyright">
+          © 2025 Car Accident Counsel. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
